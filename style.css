@@ -1,0 +1,88 @@
+body {
+    background:#C2D6BF;
+    margin:0;
+    padding:0;
+    font-family: Arial;
+    color:#fff;
+}
+
+#container {
+    width:56em;
+    margin:0 auto;
+    background:#679C67;
+}
+#container > header {
+    background:#fff;
+    text-align:center;
+    padding:2em 0 2.2em 0;
+}
+#container > header h1 {
+    font-size:1.6em;
+    font-weight: normal;
+    color:#AA8D86;
+    font-family: "lucida grande";
+}
+
+nav {
+    width:100%;
+    padding:1em 2em 0.4em 1.4em;
+}
+
+#menu {
+    width:100%;
+}
+#menu a {
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+}
+
+
+
+#content {
+    position:relative;
+    padding: 2em 7.4em 2em 13.8em;
+    min-height: 30em;
+}
+#content > .ajax-content > section > article > header {
+    display:none;
+}
+
+#flower-image {
+    position: absolute;
+    bottom: -0.5em;
+    left: -5.6em;
+}
+.bottom-quote {
+    position: absolute;
+    background: #A5867F;
+    padding: 1em 1em 1em 2.4em;
+    bottom: 1.5em;
+    left: 11.9em;
+    width: 30em;
+}
+#frontpage-personal-picture {
+    width: 11.9em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+#whoami-picture {
+    width: 27em;
+    position: absolute;
+    bottom: 0;
+    right: -14em;
+    clip: rect(2em, 22em, 37.4em, 7em);
+}
+
+
+footer {
+    background:#fff;
+    text-align:center;
+    font-size:0.8em;
+    color:#000;
+    padding:0.4em 0 0.4em 0;
+}
+
+

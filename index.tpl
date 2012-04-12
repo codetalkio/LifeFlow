@@ -20,28 +20,32 @@
 <body>
     <div id="container">
         <header class="ajax-title">
-            <h1>{% TITLE %}</h1>
+            <img src="{% THEME_ROOT %}img/logo.png" alt="Life-flow" />
+            <h1>Integrativ Energi &amp; PowerCoach · Terapi · Tankefeltterapi</h1>
         </header>
         
         <nav>
-            <ul id="menu" class="ajax-menu">
+            <table id="menu" class="ajax-menu">
+                <tr>
             <?php
                 foreach(Pages::getMenu() as $menu){
-                    print '<li><a ' . $menu['active'] . ' href="' . $menu['href'] . '">' . $menu['name'] . '</a></li>';
+                    print '<td><a ' . $menu['active'] . ' href="' . $menu['href'] . '">' . $menu['name'] . '</a></td>';
                 }
             ?>
-            </ul>
+                </tr>
+            </table>
         </nav>
         
-        <div id="content" class="ajax-content">
-            {% CONTENT %}
+        <div id="content">
+            <div class="ajax-content">
+                {% CONTENT %}
+            </div>
+            <img id="flower-image" src="{% THEME_ROOT %}img/blomst.png" alt="" />
         </div>
     </div>
     
     <footer>
-        Copyright &copy; 2009 - 2011 Christian Laustsen, 
-        <a href="{% URL_ROOT %}LICENSE">All rights reserved</a> |
-        <a href="{% URL_ROOT %}admin">Administration</a>
+        Life-flow v/ Birgitte Jensen · Ringdams Kobbel 10 · 7100 Vejle · Tlf. 50 48 11 30 · Lifeflow.tft@gmail.com
     </footer>
     {% GOOGLE_ANALYTICS %}
 </body>
