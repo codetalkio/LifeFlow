@@ -35,6 +35,11 @@ nav {
     text-decoration:none;
     color:#fff;
     font-weight:bold;
+    padding-bottom: 27px;
+}
+#menu .active-link {
+    background: url("{% THEME %}/img/active-link.png") no-repeat;
+    background-position: bottom;
 }
 
 
@@ -56,10 +61,22 @@ nav {
 .bottom-quote {
     position: absolute;
     background: #A5867F;
-    padding: 1em 1em 1em 2.4em;
+    padding: 1.2em 4em 1em 1em;
     bottom: 1.5em;
     left: 11.9em;
     width: 30em;
+    text-align: center;
+}
+.quote {
+    font-size: 0.9em;
+}
+.author {
+    font-size: 0.9em;
+    text-align:right;
+    display:block;
+    color:#000;
+    font-style: italic;
+    margin-right: 2.4em;
 }
 #frontpage-personal-picture {
     width: 11.9em;
@@ -74,6 +91,10 @@ nav {
     bottom: 0;
     right: -14em;
     clip: rect(2em, 22em, 37.4em, 7em);
+    /* START: IE 7 */
+    *width:25em;
+    *right:-18.5em;
+    /* IE 7: END */
 }
 
 
